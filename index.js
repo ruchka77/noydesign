@@ -16,7 +16,7 @@ window.addEventListener("scroll", () => {
     // Detect if user stops scrolling (idle)
     scrollTimeout = setTimeout(() => {
         navbar.style.opacity = "1"; // Restore navbar when idle
-    }, 2000); // Adjust time (2000ms = 2 seconds)
+    }, 1000); // Adjust time (2000ms = 2 seconds)
 });
 
 // ✅ Only run carousel logic if "carousel-track" exists
