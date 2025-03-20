@@ -15,12 +15,12 @@ const track = document.getElementById("carousel-track");
 
 if (track) { // ✅ Check if the element exists before running the code
     const totalImages = 25;
-    const imagePath = "CarouselPictures/";
+    const imagePath = "https://ruchka77.github.io/noydesign/CarouselPictures/"; // Updated to GitHub Pages path
 
     // Dynamically insert images into the carousel
     for (let i = 1; i <= totalImages; i++) {
         let img = document.createElement("img");
-        img.src = `${imagePath}example${i}.jpeg`;
+        img.src = `${imagePath}example${i}.jpeg`; // Uses GitHub URL instead of local path
         img.alt = `Image ${i}`;
         img.classList.add("carousel-image");
         img.style.zIndex = i === 0 ? 1 : 0; // Ensure only the first image is visible initially
@@ -55,4 +55,3 @@ if (track) { // ✅ Check if the element exists before running the code
 
     setInterval(() => moveSlide(1), 8000);
 }
-
