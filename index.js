@@ -1,16 +1,18 @@
-let lastScrollY = window.scrollY;
+let lastScrollY = window.scrollY || document.documentElement.scrollTop;
 const navbar = document.querySelector(".nav-wrapper");
 
 window.addEventListener("scroll", () => {
-    if (window.scrollY === 0) {
+    let currentScrollY = window.scrollY || document.documentElement.scrollTop;
+
+    if (currentScrollY === 0) {
         navbar.style.opacity = "1"; // Fully visible when at the top
-    } else if (window.scrollY > lastScrollY) {
+    } else if (currentScrollY > lastScrollY) {
         navbar.style.opacity = "0.1"; // Hide when scrolling down
     } else {
         navbar.style.opacity = "1"; // Show when scrolling up
     }
 
-    lastScrollY = window.scrollY; // Update last scroll position
+    lastScrollY = currentScrollY; // Update last scroll position
 });
 
 // ✅ Only run carousel logic if "carousel-track" exists
