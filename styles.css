@@ -280,6 +280,15 @@ fixes issues with images responsiveness */
     margin-top: 0;
 }
 
+
+.section-header::after {
+    content: "";
+    height: 5px;
+    margin: 1rem;
+    width: 150px;
+    background-color:var(--coloracc);
+}
+
 .images-wrapper {
     display: flex;
     justify-content: center;
