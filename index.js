@@ -1,13 +1,22 @@
 let lastScrollY = window.scrollY;
 const navbar = document.querySelector(".nav-wrapper");
+let scrollTimeout; // Timeout variable to track inactivity
 
 window.addEventListener("scroll", () => {
+    clearTimeout(scrollTimeout); // Reset idle timer on every scroll
+
     if (window.scrollY > lastScrollY) {
-        navbar.style.opacity = "0.1";
+        navbar.style.opacity = "0.1"; // Hide when scrolling down
     } else {
-        navbar.style.opacity = "1"; // Show navbar when scrolling up
+        navbar.style.opacity = "1"; // Show when scrolling up
     }
-    lastScrollY = window.scrollY; // Update scroll position
+
+    lastScrollY = window.scrollY; // Update last scroll position
+
+    // Detect if user stops scrolling (idle)
+    scrollTimeout = setTimeout(() => {
+        navbar.style.opacity = "1"; // Restore navbar when idle
+    }, 2000); // Adjust time (2000ms = 2 seconds)
 });
 
 // ✅ Only run carousel logic if "carousel-track" exists
