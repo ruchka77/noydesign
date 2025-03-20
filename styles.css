@@ -35,7 +35,7 @@ ul {
     background-color: var(--colorp); /* Semi-transparent background */
     z-index: 1000; /* Ensures it stays above everything */
     transition: opacity 0.6s ease-in-out; 
-    height: 135px;
+    height: 145px;
 }
 
 .nav-list {
