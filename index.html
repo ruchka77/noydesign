@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>נוי דרעי עיצוב ומיתוג</title>    
+    <link rel="stylesheet" href="styles.css">    
+    </head>
+    <body>
+        <div class="nav-wrapper">
+<nav>
+        <ul class="nav-list">
+            <img src="noylogo1.png" class="logonav">
+            <li class="list"><a href="index.html">אודות</a></li>
+            <li class="list"><a href="portfolio.html">תיק עבודות</a></li>
+            <li class="list"><a href="#error">צור קשר</a></li>
+        </ul>
+</nav>
+    </div>
+    <div class="carousel-wrapper">
+        <div class="carousel-track" id="carousel-track">
+        </div>
+        <div class="buttons">
+        <button class="next" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="previous" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </div>
+    <div class="about">
+        <p>
+            ב-Noy Design אנו מתמחים ביצירת <b>עיצובים מרהיבים וייחודיים</b> לכל אירוע משמעותי בחייכם – 
+            <b class="acc-text">בר מצווה, חתונה, יום נישואין, ימי הולדת, חגים, בריתות ועוד</b>. 
+            כל יצירה נעשית <b>בהשקעה, אהבה ותשומת לב לפרטים הקטנים</b>, כדי להבטיח שכל לקוח יקבל את המוצר המושלם עבורו.
+        </p>
+        <div class="canva-wrapper">
+            <img src="memory.png" class="memories">
+        </div>
+        <p>
+            אנחנו שמים <b>דגש על שירות אישי, אכפתיות והתאמה מלאה לצרכים 
+            <span class="acc-text">ולרצונות שלכם</span></b>. מתוך הבנה שכל אירוע הוא רגע מיוחד 
+            שצריך להיזכר בו בצורה הטובה ביותר.
+            <br>
+            <b>כי עיצוב הוא לא רק יופי – <span class="acc-text">הוא הדרך להוסיף קסם לכל רגע</span>.</b>
+        </p>
+        <div class="canva-wrapper">
+            <img src="wecare.png" class="memories">
+        </div>
+    </div>
+    <h1 class="contact-header">השאירו פרטים ונחזור אליכם בהקדם</h1>
+    <div class="line"></div>
+    <div id="error" class="form-wrapper">
+        <form class="subform">
+            <div class="form-group">
+                <label for="name">שם מלא</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="email">אימייל</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="phone">מספר טלפון</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <button type="submit">שלח</button>
+        </form>            
+    </div>
+        <footer class="footer">
+        <p>Site designed by Michael Berger ©</p>
+        </footer>
+    <script defer src="index.js">
+    </script>
+    </body>
+</html>
