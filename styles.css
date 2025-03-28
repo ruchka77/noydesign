@@ -305,6 +305,12 @@ fixes issues with images responsiveness */
     border-radius: 5px;
 }
 
+.credit {
+    display: flex;
+    justify-content: center;
+    font-size: 5px;
+}
+
 @media only screen and (max-width: 400px) {
 .logonav {
     width: 100px;
