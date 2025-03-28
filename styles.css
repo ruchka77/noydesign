@@ -33,8 +33,6 @@ ul {
    opacity: 0; /* Start hidden */
    transition: opacity 1s ease-in-out;
    pointer-events: auto;
-   margin-right: 60px;
-    margin-bottom: 30px;
     max-width: 110px;
     max-height: 110px;
 }
