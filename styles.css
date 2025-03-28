@@ -306,9 +306,10 @@ fixes issues with images responsiveness */
 }
 
 .credit {
-    display: flex;
-    justify-content: center;
-    font-size: 5px;
+    font-size: 3px;
+    text-decoration: none;
+    text-align: center;
+    color: var(--colorsec);
 }
 
 @media only screen and (max-width: 400px) {
