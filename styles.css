@@ -346,7 +346,11 @@ fixes issues with images responsiveness */
 .list {
     margin-top: 3rem;
 }
-
+.whatsapp {
+    height: 70px;
+    width: 70px;
+}
+    
 }
 
 /* Media query for Computer Screens and Tablets */
