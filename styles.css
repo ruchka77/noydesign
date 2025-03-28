@@ -35,6 +35,8 @@ ul {
    pointer-events: auto;
    margin-right: 30px;
     margin-bottom: 30px;
+    max-width: 130px;
+    max-height: 130px;
 }
 
 .whatsapp.visible {
