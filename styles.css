@@ -30,9 +30,15 @@ ul {
    position: fixed;
    bottom: 0;
    right: 0;
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
-    margin-right: 15px;
+   opacity: 0; /* Start hidden */
+   transition: opacity 1s ease-in-out;
+   pointer-events: auto;
+   margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.whatsapp.visible {
+   opacity: 1; /* Fade in when class is added */
 }
 
 .nav-wrapper {
