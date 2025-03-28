@@ -1,3 +1,10 @@
+  window.addEventListener('load', function () {
+    const whatsappIcon = document.querySelector('.whatsapp');
+    if (whatsappIcon) {
+      whatsappIcon.classList.add('visible');
+    }
+  });
+
 let lastScrollY = window.scrollY || document.documentElement.scrollTop;
 const navbar = document.querySelector(".nav-wrapper");
 
