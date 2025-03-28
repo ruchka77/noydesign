@@ -33,12 +33,16 @@ ul {
    opacity: 0; /* Start hidden */
    transition: opacity 1s ease-in-out;
    pointer-events: auto;
-   margin-right: 15px;
-    margin-bottom: 15px;
+   margin-right: 30px;
+    margin-bottom: 30px;
 }
 
 .whatsapp.visible {
-   opacity: 1; /* Fade in when class is added */
+   opacity: 0.3; /* Fade in when class is added */
+}
+
+.whatsapp:hover {
+    opacity: 1;
 }
 
 .nav-wrapper {
