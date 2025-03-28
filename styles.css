@@ -326,6 +326,13 @@ fixes issues with images responsiveness */
     border-radius: 5px;
 }
 
+.credit-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3px;
+}
+
 .credit {
     font-size: 3px;
     text-decoration: none;
