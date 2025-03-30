@@ -26,27 +26,6 @@ ul {
     margin: 0;
 }
 
-.whatsapp {
-   position: fixed;
-   bottom: 0;
-   right: 0;
-   opacity: 0; /* Start hidden */
-   transition: opacity 1s ease-in-out;
-   pointer-events: auto;
-    max-width: 110px;
-    max-height: 110px;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-}
-
-.whatsapp.visible {
-   opacity: 0.1; /* Fade in when class is added */
-}
-
-.whatsapp:hover {
-    opacity: 1;
-}
-
 .nav-wrapper {
     position: fixed;  /* Keeps navbar at the top */
     top: 0;
@@ -326,18 +305,55 @@ fixes issues with images responsiveness */
     border-radius: 5px;
 }
 
-.credit-wrapper {
+.formpage {
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin-bottom: 3px;
+    align-items: center;
+    margin-top: 35vh;
+    flex-direction: column;
 }
 
-.credit {
-    font-size: 3px;
-    text-decoration: none;
-    text-align: center;
+.form-body {
+    overflow: hidden;
+}
+
+.thankyou {
+    font-family: var(--ff);
+    font-size: 1.6rem;
+    font-weight: 600;
     color: var(--colorsec);
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-link {
+    font-family: var(--ff);
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--colorsec);
+    padding: 15px;
+    margin-top: 0.7rem;
+    background-color: var(--coloracc);
+    border: 2px solid var(--colorsec);
+    transition: background-color 800ms ease-in-out,
+    color 800ms ease-in-out,
+    border 800ms ease-in-out;
+}
+
+.btn-link:hover {
+    background-color: var(--colorsec);
+    color: var(--coloracc);
+    border: 2px solid var(--colorp);
+}
+
+.mail-img {
+    height: 150px;
+    width: auto;
 }
 
 @media only screen and (max-width: 400px) {
@@ -353,11 +369,7 @@ fixes issues with images responsiveness */
 .list {
     margin-top: 3rem;
 }
-.whatsapp {
-    height: 70px;
-    width: 70px;
-}
-    
+
 }
 
 /* Media query for Computer Screens and Tablets */
