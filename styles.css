@@ -344,7 +344,7 @@ fixes issues with images responsiveness */
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 35vh;
+    margin-top: 30vh;
     flex-direction: column;
 }
 
